@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogInForm">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="504.0" prefWidth="504.0">
+            <children>
+                <Button layoutX="227.0" layoutY="287.0" mnemonicParsing="false" onAction="#submitted" text="Log In" />
+                <TextField fx:id="usernameTF" layoutX="159.0" layoutY="161.0" promptText="username" />
+                <PasswordField fx:id="passwordPF" layoutX="159.0" layoutY="212.0" promptText="password" />
+                <Text layoutX="92.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Video Game Store Sytsem">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Text>
+                <Text fx:id="incorrectTF" layoutX="146.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="213.0" />
+                <CheckBox fx:id="adminCB" layoutX="159.0" layoutY="252.0" mnemonicParsing="false" text="Log in as an Admin" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
